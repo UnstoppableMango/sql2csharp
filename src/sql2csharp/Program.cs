@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using UnMango.Ux.Plugins.Skeleton;
+
+return Skel.PluginMain(UxFuncs.Default with
+{
+    Execute = (cmdArgs, cancellationToken) =>
+    {
+        System.Console.WriteLine("Got here");
+        return ValueTask.CompletedTask;
+    }
+});
