@@ -2,9 +2,9 @@
 
 return Skel.PluginMain(UxFuncs.Default with
 {
-    Execute = (cmdArgs, cancellationToken) =>
-    {
-        System.Console.WriteLine("Got here");
-        return ValueTask.CompletedTask;
-    }
+	Execute = (cmdArgs, cancellationToken) =>
+	{
+		System.Console.WriteLine("Got here");
+		return ValueTask.CompletedTask;
+	},
 });

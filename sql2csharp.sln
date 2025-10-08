@@ -9,6 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnMango.Sql2Csharp", "src\U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sql2csharp", "src\sql2csharp\sql2csharp.csproj", "{CC16A12D-E428-4958-95DE-9479EB0ED5BB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{E2EBDE29-1F38-4797-A7F1-C91B3FE65E22}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		LICENSE = LICENSE
+		Makefile = Makefile
+		hack\nix.envrc = hack\nix.envrc
+		hack\pre-commit.sh = hack\pre-commit.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
