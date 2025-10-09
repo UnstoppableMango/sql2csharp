@@ -1,10 +1,8 @@
-﻿using UnMango.Ux.Plugins.Skeleton;
+﻿using UnMango.Sql2Csharp;
+using UnMango.Ux.Plugins.Skeleton;
 
 return Skel.PluginMain(UxFuncs.Default with
 {
-	Execute = (cmdArgs, cancellationToken) =>
-	{
-		System.Console.WriteLine("Got here");
-		return ValueTask.CompletedTask;
-	},
+	Execute = async (cmdArgs, cancellationToken)
+		=> await Plugin.ExecuteAsync(cmdArgs.Args, cancellationToken),
 });
